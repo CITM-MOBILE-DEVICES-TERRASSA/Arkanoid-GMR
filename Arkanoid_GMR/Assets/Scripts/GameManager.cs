@@ -34,5 +34,23 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<Player>().ResetPlayer();
     }
 
+    public void CheckLevelComplet()
+    {
 
+        if (transform.childCount <=1)
+        {
+            Scene escenaActual = SceneManager.GetActiveScene();
+
+            if (escenaActual.name == "Level1")
+            {
+                SceneManager.LoadScene("Level2");
+            }
+            else
+            {
+                SceneManager.LoadScene("Level1");
+            }
+
+        }
+        
+    }
 }
