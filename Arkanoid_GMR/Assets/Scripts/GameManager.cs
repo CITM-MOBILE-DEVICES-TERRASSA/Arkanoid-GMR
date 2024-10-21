@@ -1,67 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int lives = 3;
-    private bool isPaused = false; // Variable para verificar si el juego está en pausa
+    public int lives = 3;  // Vidas iniciales
+    public int score = 0;  // Puntuación inicial
+    public HUD hud;        // Referencia al HUD para actualizar la puntuación y vidas
+    private bool isPaused = false;
 
     public GameObject pauseUI;
 
+    void Start()
+    {
+        // Inicializa el HUD con las vidas y puntuación iniciales
+        hud.UpdateLives(lives);
+        hud.UpdateScore(score);
+    }
+
     void Update()
     {
-        // Si se presiona la tecla Escape, se alterna el estado de pausa
+        // Si se presiona la tecla Space, se alterna el estado de pausa
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TogglePause();
         }
     }
 
-    // Método para alternar la pausa del juego
-    public void TogglePause()
+    public void AddPoints(int points)
     {
-        if (isPaused)
-        {
-            ResumeGame();
-        }
-        else
-        {
-            PauseGame();
-        }
-    }
-
-    // Pausar el juego
-    public void PauseGame()
-    {
-        Time.timeScale = 0f; // Detiene el tiempo del juego
-        isPaused = true;
-        // Aquí podrías mostrar el menú de pausa si tienes uno
-        pauseUI.SetActive(true);
-    }
-
-    // Reanudar el juego
-    public void ResumeGame()
-    {
-        Time.timeScale = 1f; // Restablece el tiempo del juego
-        isPaused = false;
-        pauseUI.SetActive(false);
-        // Aquí podrías ocultar el menú de pausa si tienes uno
-    }
-
-    public void QuitGame()
-    {
-        Time.timeScale = 1f;
-        isPaused = false;
-        pauseUI.SetActive(false);
-        SceneManager.LoadScene("GameMenu");
-
+        score += points;
+        hud.UpdateScore(score);  // Actualizar el HUD cuando cambia la puntuación
     }
 
     public void LosseHealth()
     {
-        lives--;
+        lives--;  // Reducir vidas
+
+        hud.UpdateLives(lives);  // Actualizar el HUD con las vidas restantes
 
         if (lives <= 0)
         {
@@ -77,6 +52,40 @@ public class GameManager : MonoBehaviour
     {
         FindObjectOfType<Ball>().ResetBall();
         FindObjectOfType<Player>().ResetPlayer();
+    }
+
+    public void TogglePause()
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        isPaused = true;
+        pauseUI.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        isPaused = false;
+        pauseUI.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Time.timeScale = 1f;
+        isPaused = false;
+        pauseUI.SetActive(false);
+        SceneManager.LoadScene("GameMenu");
     }
 
     public void CheckLevelComplet()

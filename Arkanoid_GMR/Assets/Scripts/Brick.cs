@@ -5,6 +5,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     public int hitsToDestroy = 3;  // Número de toques necesarios para destruir el brick
+    public int points = 100;  // Puntos que este ladrillo otorga
     private SpriteRenderer spriteRenderer;  // Referencia al componente SpriteRenderer
 
     private void Start()
@@ -21,8 +22,11 @@ public class Brick : MonoBehaviour
 
             if (hitsToDestroy <= 0)
             {
+                
                 FindObjectOfType<GameManager>().CheckLevelComplet();
                 Destroy(gameObject);  // Destruir el brick cuando los toques llegan a 0
+                FindObjectOfType<GameManager>().AddPoints(points);  // Otorgar puntos al destruir el ladrillo
+
             }
             else
             {
