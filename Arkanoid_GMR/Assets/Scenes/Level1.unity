@@ -547,6 +547,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -637,6 +641,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -723,6 +731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -848,6 +860,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -938,6 +954,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1028,6 +1048,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1350,6 +1374,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1440,6 +1468,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1530,6 +1562,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1616,6 +1652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1706,6 +1746,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1929,6 +1973,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2015,6 +2063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2105,6 +2157,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2447,6 +2503,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2663,6 +2723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2917,6 +2981,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3007,6 +3075,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3097,6 +3169,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3255,6 +3331,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3345,6 +3425,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3435,6 +3519,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3525,6 +3613,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3749,6 +3841,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3835,6 +3931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4180,6 +4280,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4270,6 +4374,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4360,6 +4468,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4584,6 +4696,10 @@ PrefabInstance:
       propertyPath: hitsToDestroy
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4670,6 +4786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks
       objectReference: {fileID: 0}
+    - target: {fileID: 9138437998357465004, guid: b2bb35996a3c3914b912fa762da31002, type: 3}
+      propertyPath: powerUpPrefab
+      value: 
+      objectReference: {fileID: 4875640205664914397, guid: 56bb9fcb6436a3345903f966012f1633, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4698,6 +4818,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3507700061012915443, guid: 0b2669b930e6a6c4aaff08661c12f75a, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3507700061012915443, guid: 0b2669b930e6a6c4aaff08661c12f75a, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5206441099774518927, guid: 0b2669b930e6a6c4aaff08661c12f75a, type: 3}

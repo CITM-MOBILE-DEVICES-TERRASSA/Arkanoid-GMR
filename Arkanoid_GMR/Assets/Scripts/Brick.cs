@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Brick : MonoBehaviour
 {
     public int hitsToDestroy = 3;  // Número de toques necesarios para destruir el brick
     public int points = 100;  // Puntos que este ladrillo otorga
     private SpriteRenderer spriteRenderer;  // Referencia al componente SpriteRenderer
+    public GameObject powerUpPrefab;  // El prefab del power-up
+    public float powerUpDropChance = 0.2f;  // Probabilidad de soltar un power-up (20% en este caso)
 
     private void Start()
     {
@@ -22,7 +25,7 @@ public class Brick : MonoBehaviour
 
             if (hitsToDestroy <= 0)
             {
-                
+                DropPowerUp();
                 FindObjectOfType<GameManager>().CheckLevelComplet();
                 Destroy(gameObject);  // Destruir el brick cuando los toques llegan a 0
                 FindObjectOfType<GameManager>().AddPoints(points);  // Otorgar puntos al destruir el ladrillo
@@ -44,5 +47,13 @@ public class Brick : MonoBehaviour
         // Aclarar el color progresivamente (más cercano al blanco con cada toque)
         float colorFactor = (float)hitsToDestroy / 3f;  // Suponiendo 3 como el número máximo de toques inicial
         spriteRenderer.color = new Color(1f, colorFactor, colorFactor);  // Ajustar el color a medida que se reduce hitsToDestroy
+    }
+
+    void DropPowerUp()
+    {
+        if (Random.value < powerUpDropChance)  // Generar power-up con la probabilidad definida
+        {
+            Instantiate(powerUpPrefab, transform.position, Quaternion.identity, null);
+        }
     }
 }
