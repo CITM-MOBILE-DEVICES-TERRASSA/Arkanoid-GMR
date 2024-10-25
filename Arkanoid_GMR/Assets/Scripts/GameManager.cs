@@ -3,23 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int lives = 3;  // Vidas iniciales
-    public int score = 0;  // Puntuación inicial
-    public HUD hud;        // Referencia al HUD para actualizar la puntuación y vidas
+    public int lives = 3;  
+    public int score = 0;  
+    public HUD hud;        
     private bool isPaused = false;
 
     public GameObject pauseUI;
 
     void Start()
     {
-        // Inicializa el HUD con las vidas y puntuación iniciales
         hud.UpdateLives(lives);
         hud.UpdateScore(score);
     }
 
     void Update()
     {
-        // Si se presiona la tecla Space, se alterna el estado de pausa
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TogglePause();
@@ -29,14 +27,14 @@ public class GameManager : MonoBehaviour
     public void AddPoints(int points)
     {
         score += points;
-        hud.UpdateScore(score);  // Actualizar el HUD cuando cambia la puntuación
+        hud.UpdateScore(score);  
     }
 
     public void LosseHealth()
     {
-        lives--;  // Reducir vidas
+        lives--;  
 
-        hud.UpdateLives(lives);  // Actualizar el HUD con las vidas restantes
+        hud.UpdateLives(lives);  
 
         if (lives <= 0)
         {

@@ -11,10 +11,9 @@ public class Player : MonoBehaviour
     private Vector2 direction;
     private Vector2 startPosition;
 
-    private bool isAutoPlay = false; // Control del modo automático
+    private bool isAutoPlay = false; 
 
-    public GameObject ball; // Referencia a la pelota
-
+    public GameObject ball; 
     private void Start()
     {
         startPosition = transform.position;
@@ -22,10 +21,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // Activar/desactivar el modo automático con la tecla G
         if (Input.GetKeyDown(KeyCode.G))
         {
-            isAutoPlay = !isAutoPlay; // Cambiar el estado del modo automático
+            isAutoPlay = !isAutoPlay;
         }
 
         if (isAutoPlay)
@@ -38,7 +36,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Modo manual
     void ManualPlay()
     {
         float inputValue = Input.GetAxisRaw("Horizontal");
@@ -59,13 +56,11 @@ public class Player : MonoBehaviour
         ribidbody2D.AddForce(direction * moveSpeed * Time.deltaTime * 100);
     }
 
-    // Modo automático: seguir la pelota
     void AutoPlay()
     {
         Vector3 ballPosition = ball.transform.position;
         Vector3 paddlePosition = transform.position;
 
-        // Solo moverse en el eje X hacia la posición de la pelota
         paddlePosition.x = Mathf.MoveTowards(paddlePosition.x, ballPosition.x, moveSpeed * Time.deltaTime);
 
         transform.position = paddlePosition;

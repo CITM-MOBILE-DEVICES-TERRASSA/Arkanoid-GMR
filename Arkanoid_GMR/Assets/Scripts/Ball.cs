@@ -6,9 +6,9 @@ public class Ball : MonoBehaviour
 {
     public Rigidbody2D rigidBody2D;
 
-    public float initialSpeed = 300; // Velocidad inicial
-    public float speedIncrease = 50; // Incremento de velocidad por colisi�n
-    public float maxSpeed = 600;     // Velocidad m�xima
+    public float initialSpeed = 300; 
+    public float speedIncrease = 50; 
+    public float maxSpeed = 600;     
 
     private Vector2 velocity;
     private Vector2 startPosition;
@@ -25,14 +25,13 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Si colisiona con la "DeadZone", llamar a la funci�n de p�rdida de vida
         if (collision.gameObject.CompareTag("DeadZone"))
         {
             FindAnyObjectByType<GameManager>().LosseHealth();
         }
         else
         {
-            IncreaseSpeed(); // Aumentar la velocidad en cada colisi�n
+            IncreaseSpeed(); 
         }
         if (collision.gameObject.GetComponent<Player>()){
             audioSource.clip=playerSound;
@@ -44,17 +43,13 @@ public class Ball : MonoBehaviour
         }
     }
 
-    // Aumentar la velocidad de la pelota hasta un l�mite m�ximo
     void IncreaseSpeed()
     {
-        // Obtener la velocidad actual
         Vector2 currentVelocity = rigidBody2D.velocity;
 
-        // Aumentar la velocidad en la misma direcci�n, respetando el l�mite m�ximo
-        float currentSpeed = currentVelocity.magnitude; // Magnitud de la velocidad actual
-        float newSpeed = Mathf.Min(currentSpeed + speedIncrease, maxSpeed); // Nueva velocidad con l�mite
+        float currentSpeed = currentVelocity.magnitude; 
+        float newSpeed = Mathf.Min(currentSpeed + speedIncrease, maxSpeed); 
 
-        // Mantener la misma direcci�n pero con la nueva velocidad
         rigidBody2D.velocity = currentVelocity.normalized * newSpeed;
     }
 
@@ -63,11 +58,9 @@ public class Ball : MonoBehaviour
         transform.position = startPosition;
         rigidBody2D.velocity = Vector2.zero;
 
-        // Generar una direcci�n inicial aleatoria
         velocity.x = Random.Range(-1f, 1f);
         velocity.y = 1;
 
-        // Aplicar la velocidad inicial
         rigidBody2D.AddForce(velocity * initialSpeed);
     }
 }
