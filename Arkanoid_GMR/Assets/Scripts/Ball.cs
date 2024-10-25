@@ -7,11 +7,15 @@ public class Ball : MonoBehaviour
     public Rigidbody2D rigidBody2D;
 
     public float initialSpeed = 300; // Velocidad inicial
-    public float speedIncrease = 50; // Incremento de velocidad por colisión
-    public float maxSpeed = 600;     // Velocidad máxima
+    public float speedIncrease = 50; // Incremento de velocidad por colisiï¿½n
+    public float maxSpeed = 600;     // Velocidad mï¿½xima
 
     private Vector2 velocity;
     private Vector2 startPosition;
+
+    public AudioSource audioSource;
+
+    public AudioClip playerSound, brickSound;
 
     void Start()
     {
@@ -21,28 +25,36 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Si colisiona con la "DeadZone", llamar a la función de pérdida de vida
+        // Si colisiona con la "DeadZone", llamar a la funciï¿½n de pï¿½rdida de vida
         if (collision.gameObject.CompareTag("DeadZone"))
         {
             FindAnyObjectByType<GameManager>().LosseHealth();
         }
         else
         {
-            IncreaseSpeed(); // Aumentar la velocidad en cada colisión
+            IncreaseSpeed(); // Aumentar la velocidad en cada colisiï¿½n
+        }
+        if (collision.gameObject.GetComponent<Player>()){
+            audioSource.clip=playerSound;
+            audioSource.Play();
+        }  
+        if (collision.gameObject.GetComponent<Brick>()){
+            audioSource.clip=brickSound;
+            audioSource.Play();
         }
     }
 
-    // Aumentar la velocidad de la pelota hasta un límite máximo
+    // Aumentar la velocidad de la pelota hasta un lï¿½mite mï¿½ximo
     void IncreaseSpeed()
     {
         // Obtener la velocidad actual
         Vector2 currentVelocity = rigidBody2D.velocity;
 
-        // Aumentar la velocidad en la misma dirección, respetando el límite máximo
+        // Aumentar la velocidad en la misma direcciï¿½n, respetando el lï¿½mite mï¿½ximo
         float currentSpeed = currentVelocity.magnitude; // Magnitud de la velocidad actual
-        float newSpeed = Mathf.Min(currentSpeed + speedIncrease, maxSpeed); // Nueva velocidad con límite
+        float newSpeed = Mathf.Min(currentSpeed + speedIncrease, maxSpeed); // Nueva velocidad con lï¿½mite
 
-        // Mantener la misma dirección pero con la nueva velocidad
+        // Mantener la misma direcciï¿½n pero con la nueva velocidad
         rigidBody2D.velocity = currentVelocity.normalized * newSpeed;
     }
 
@@ -51,7 +63,7 @@ public class Ball : MonoBehaviour
         transform.position = startPosition;
         rigidBody2D.velocity = Vector2.zero;
 
-        // Generar una dirección inicial aleatoria
+        // Generar una direcciï¿½n inicial aleatoria
         velocity.x = Random.Range(-1f, 1f);
         velocity.y = 1;
 
